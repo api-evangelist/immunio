@@ -1,0 +1,64 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.immun.io/
+description: >-
+  First-party IMMUNIO agent libraries. IMMUNIO (Montreal, founded 2013) shipped
+  language-native RASP agents distributed through the public package registries;
+  the agents embed in a web application and monitor requests in real time rather
+  than acting as REST API clients. The company was acquired by Trend Micro in
+  November 2017 and its product surface (immun.io / docs.immun.io) has since been
+  retired, so these registry artifacts are the durable record of the client
+  surface. Package identity and versions confirmed against pypi.org,
+  rubygems.org and registry.npmjs.org at fetch time. Author on every registry is
+  "Immunio". No first-party Packagist (PHP) or Maven Central (Java) package was
+  found under the immunio namespace; the PHP and Java agents were distributed as
+  binary agents (.so / jar) via the documentation rather than a public registry.
+packages:
+  - language: ruby
+    registry: rubygems
+    name: immunio
+    url: https://rubygems.org/gems/immunio
+    version: 2.0.4
+    install: gem install immunio
+    homepage: http://immun.io/
+    licenses: [Immunio, MIT]
+    downloads: 215779
+    official: true
+    status: 200
+    note: Ruby on Rails RASP agent; most-downloaded of the three registries.
+  - language: python
+    registry: pypi
+    name: immunio
+    url: https://pypi.org/project/immunio/
+    version: 2.3.3
+    install: pip install immunio
+    homepage: https://www.immun.io
+    official: true
+    status: 200
+    note: Python agent (Django / Pyramid / Flask).
+  - language: javascript
+    registry: npm
+    name: immunio
+    url: https://www.npmjs.com/package/immunio
+    version: 1.5.3
+    install: npm install immunio
+    homepage: https://www.immun.io
+    official: true
+    status: 200
+    note: Node.js / Express agent; published 2016-03, last release 2020-01.
+registries_checked:
+  - registry: rubygems
+    query: immunio
+    result: found
+  - registry: pypi
+    query: immunio
+    result: found
+  - registry: npm
+    query: immunio
+    result: found
+  - registry: packagist
+    query: immunio
+    result: none
+  - registry: maven-central
+    query: immunio
+    result: none

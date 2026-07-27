@@ -1,7 +1,31 @@
 aid: immunio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/immunio.png
 name: Immunio
-description: Immunio is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  IMMUNIO was a Montreal-based application security company (founded 2013) that
+  built a real-time RASP (Runtime Application Self-Protection) platform to
+  detect and block attacks against web applications and APIs without requiring
+  code changes. Its product shipped as language-native agents for Ruby on Rails,
+  Python (Django/Pyramid/Flask), Node.js/Express, Java, PHP, Scala and .NET,
+  covering the OWASP Top 10 including Cross-Site Scripting and SQL Injection. The
+  company raised roughly $8M from Bloomberg Beta, WhiteStar Capital, Real
+  Ventures, Hoxton Ventures and BDC, and was acquired by Trend Micro in November
+  2017, where the technology was folded into Trend Micro's hybrid cloud and
+  container security for the DevOps lifecycle. The immun.io and docs.immun.io
+  properties have since been retired; the durable public surface today is the
+  first-party agent libraries on RubyGems, PyPI and npm and the IMMUNIO GitHub
+  organization.
 url: https://raw.githubusercontent.com/api-evangelist/immunio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +33,38 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: trend-micro
+x-acquired-date: '2017-11-28'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Security
+- Application Security
+- RASP
+- Runtime Application Self-Protection
+- Web Application Firewall
+- DevSecOps
+- Acquired
 apis: []
+common:
+- type: Packages
+  url: packages/immunio-packages.yml
+- type: SDKs
+  url: packages/immunio-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/immunio
+- type: SourceCode
+  url: https://github.com/immunio
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
